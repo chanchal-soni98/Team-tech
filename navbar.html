@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <style>
+        nav{
+            background-color: rgb(3, 3, 34);
+            display: flex;
+            border-radius: 20px;
+            justify-content: space-between;
+            padding: 20px 15px;
+            
+        }
+        nav>div{
+           
+            width: 35%;
+        }
+        #box{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        #box>div,nav>div:nth-child(1){
+            color: white;
+            
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div>Reebok</div>
+        <div id="box">
+            <div>Men</div>
+            <div>Women</div>
+            <div>Login</div>
+            <div>Signup</div>
+        </div>
+    </nav>
+</body>
+</html>
