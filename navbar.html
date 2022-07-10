@@ -33,11 +33,31 @@
     <nav>
         <div>Reebok</div>
         <div id="box">
-            <div>Men</div>
+            <div id="men">Men</div>
             <div>Women</div>
-            <div>Login</div>
-            <div>Signup</div>
+            <div id="log">Login</div>
+            <div id="btn">Signup</div>
         </div>
     </nav>
 </body>
+<script>
+    document.getElementById("btn").addEventListener("click", linked);
+    document.getElementById("log").addEventListener("click", sub);
+    document.getElementById("men").addEventListener("click", add);
+
+function linked() {
+  event.preventDefault();
+  window.location.href = "signup.html";
+
+}
+function sub(){
+    event.preventDefault();
+    window.location.href="login.html";
+  
+}
+function add(){
+    event.preventDefault();
+    window.location.href="menPage.html"
+}
+</script>
 </html>
